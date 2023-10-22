@@ -17,7 +17,7 @@ int main()
   // num gets (/) divided by 2^n in most of the case(fat sakti h compiler dependent h)
 
   cout << (num >> 1) << endl;
-  cout << (100 >> 2) << endl;
+  cout << (100 >> 2) << "x" << endl;
   cout << (100 >> 3) << endl;
   cout << (-100 >> 1) << endl;           // compiler handled it in case of signed int
   cout << (unsigned(-100) >> 1) << endl; // gives same large no compiler dosent handle
