@@ -16,6 +16,7 @@ int main()
 
   int sumRes = sum(30, 77);
   cout << sumRes << endl;
+  cout << "checking Temp file config git" << endl;
 
   return 0;
 }

@@ -2,4 +2,9 @@
 *.exe
 .vscode
 debug.cpp
-tempCodeRunnerFile
+*.c
+.c
+
+*
+!*.*
+!*/
