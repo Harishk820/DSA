@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "COMMIT_EDITMSG": "javascript",
+    "array": "cpp",
+    "initializer_list": "cpp",
+    "utility": "cpp",
+    "iostream": "cpp",
+    "vector": "cpp"
+  }
+}

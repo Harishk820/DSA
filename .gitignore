@@ -2,3 +2,9 @@
 *.exe
 .vscode
 debug.cpp
+*.c
+.c
+
+*
+!*.*
+!*/
