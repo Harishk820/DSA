@@ -1,1 +1,2 @@
-node *head;/
+first->next = second;
+  second->next = third;

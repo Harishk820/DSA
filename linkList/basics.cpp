@@ -22,7 +22,7 @@ public:
   }
 };
 
-int printLLlength(node *head)
+void printLLlength(node *&head)
 {
   node *temp = head;
   int len = 0;
@@ -31,10 +31,10 @@ int printLLlength(node *head)
     len++;
     temp = temp->next;
   }
-  return len;
+  cout << "length:" << len << endl;
 }
 
-void printLL(node *head)
+void printLL(node *&head)
 {
 
   node *temp = head;
@@ -42,7 +42,6 @@ void printLL(node *head)
   {
 
     cout << temp->data << "->";
-
     temp = temp->next;
   }
 
@@ -66,6 +65,6 @@ int main()
 
   node *head = first;
   printLL(head);
-  cout << 'length of lL:' << printLLlength(head);
+  printLLlength(head);
   return 0;
 }

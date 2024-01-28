@@ -190,6 +190,24 @@ void printLL(node *head)
   cout << endl;
 }
 
+// reverse Linkk list'
+
+void reverseLinklist(node *&head)
+{
+
+  node *prev = NULL;
+  node *curr = head;
+
+  while (curr != NULL)
+  {
+    node *nextNode = curr->next;
+    curr->next = prev;
+    prev = curr;
+    curr = nextNode;
+  }
+  head = prev;
+}
+
 int main()
 {
   node *first = new node(10);
@@ -224,5 +242,9 @@ int main()
   deleteNode(head, tail, 3);
   printLL(head);
   cout << "length is:" << findLength(head) << endl;
+  cout << "Reversed Linklist:" << endl;
+  reverseLinklist(head);
+  printLL(head);
+
   return 0;
 }
